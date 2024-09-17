@@ -1,0 +1,86 @@
+#about {
+  padding-top: 5rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 37% 60%;
+  gap: 3%;
+}
+
+.about-me {
+  border: 1px solid var(--color-primary-variant);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.about-btn {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.about-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.about-card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.about-icon {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about-card h5 {
+  font-size: 0.95rem;
+}
+
+.about-card small {
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.about-content p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-light);
+}
+
+.cta {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* ======== MEDIA QUERIES (MEDIUM DEVICES) =========== */
+
+@media screen and (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ======== MEDIA QUERIES (SMALL DEVICES) =========== */
+
+@media screen and (max-width: 600px) {
+  .about-me {
+    padding: 1rem;
+  }
+}

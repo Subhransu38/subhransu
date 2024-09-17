@@ -1,0 +1,114 @@
+header {
+  padding-top: 7rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.header-container {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ========= CTA ======== */
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* ========= ME ======== */
+
+.header-container-image {
+  width: 400px;
+  height: 400px;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.header-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: var(--transition);
+}
+
+.header-image:hover {
+  transform: rotate(0);
+}
+
+.social {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.social a {
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+.social a:hover {
+  color: var(--color-primary);
+}
+.about-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* ========= SCROLL DOWN ======== */
+
+.down-arrow-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.down-arrow-container a {
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+.down-arrow-container a:hover {
+  color: var(--color-primary);
+}
+
+/* ======== MEDIA QUERIES (MEDIUM DEVICES) =========== */
+
+@media screen and (max-width: 1024px) {
+  .header-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container-image {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ======== MEDIA QUERIES (SMALL DEVICES) =========== */
+
+@media screen and (max-width: 600px) {
+  .header-container-image {
+    width: 260px;
+    height: 260px;
+  }
+}

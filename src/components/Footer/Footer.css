@@ -1,0 +1,23 @@
+footer {
+  background: var(--color-primary);
+  padding: 0.2rem 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+/* ======== MEDIA QUERIES (SMALL DEVICES) =========== */
+
+@media screen and (max-width: 600px) {
+  .footer-logo {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+  }
+}
